@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #191923;
+}
+.container{
+    width: fit-content;
+    margin: auto;
+}
+.history{
+    padding: 30px 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.history-left{
+    width: 50%;
+}
+.history-title-h{
+    padding: 20px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.history-cards{
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+.history-cards::before{
+    content: '';
+    width: 5px;
+    height: 98%;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background: #000;
+}
+.history-card::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: -36.6px;
+    background: #000;
+    border: 4px solid #FFC107;
+    border-radius: 50%;
+}
+
+.history-card{
+    padding: 30px;
+    background: rgba(37,37,50,.98);
+    position: relative;
+}
+.history-card::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    background: rgba(37,37,50,.98);
+    transform: rotate(45deg);
+
+}
+.history-card .card-title{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.history-card .card-title-2{
+    padding-top: 5px;
+    color: #8c8c8e;
+    font-style: italic;
+    font-size: 12px;
+}
+.history-card .card-date{
+    margin-top: -50px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding: 7px;
+    color: #8c8c8e;
+    padding-left: 30px;
+    font-family: serif ;
+    width: 170px;
+    margin-left: 400px;
+    background: #1c1c1d;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.history-card .desc{
+    margin: 15px 0;
+    color: #8c8c8e;
+}
+.history-card .btn{
+    width: fit-content;
+    margin-top: 20px;
+    color: #FFC107;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 1s;
+    cursor: pointer;
+    position: relative;
+}
+.history-card .btn b{
+    margin-left: 4px;
+    font-size: 17px;
+    font-weight: 900;
+    transition: 1s;
+}
+.history-card .btn:hover{
+    text-shadow: 3px 3px 5px #FFC107;
+}
+.history-card .btn:hover b{
+    margin-left: 10px;
+}
+.history-card .btn::after:hover{
+    color: #fff;
+}
+.history-right .card-head{
+   display: flex;
+   align-items: start;
+   justify-content: space-between;
+}
+.history-right .card-date{
+    margin: 0;
+}
+.history-right{
+    width: 48%;
+}
+a {
+  padding: 10px;
+  width: 150px;
+  background: #FFC107;
+  color: #2b2a2a;
+  align-items: center;
+  justify-content: center;
+}
+
+</style>
+<body>
+    <div class="container">
+<div class="history">
+    <div class="history-left">
+        <div class="history-title-h">Education</div>
+        <div class="history-cards">
+            <div class="history-card">
+                <div class="card-title">University of Toronto</div>
+                <div class="card-title-2">student</div>
+                <div class="card-date">jan 2018 - may 2020</div>
+                <div class="desc">Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri
+                </div>
+                <div class="btn">DIPLOME <b>></b></div>
+            </div>
+            <div class="history-card">
+                <div class="card-title">Programming Course</div>
+                <div class="card-title-2">student</div>
+                <div class="card-date">jan 2018 - may 2020</div>
+                <div class="desc">Coursework - Git, WordPress, Javascript, iOS, Android.</div>
+            </div>
+            <div class="history-card">
+                <div class="card-title">Web developer courses</div>
+                <div class="card-title-2">student</div>
+                <div class="card-date">jan 2018 - may 2020</div>
+                <div class="desc">Converted Photoshop layouts to web pages using HTML, CSS, and JavaScript</div>
+                <div class="btn">LICENCE <b>></b></div>
+            </div>
+            <div class="history-card">
+                <div class="card-title">Academy of Art University</div>
+                <div class="card-title-2">student</div>
+                <div class="card-date">jan 2018 - may 2020</div>
+                <div class="desc">Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri
+                </div>
+                <div class="btn">CERTIFICATE <b>></b></div>
+            </div>
+        </div>
+    </div>
+    <div class="history-right">
+        <div class="history-title-h">Work History</div>
+        <div class="history-cards">
+            <div class="history-card">
+                <div class="card-head">
+                    <div class="title-1">
+                        <div class="card-title">Envato</div>
+                        <div class="card-title-2">Template Author
+</div>
+                    </div>
+                    <div class="card-date">jan 2018 - may 2020</div>
+                </div>
+                <div class="desc">Created Professional WordPress Themes & Templates for Personal and Creative Websites.
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="card-head">
+                    <div class="title-1">
+                        <div class="card-title">Envato</div>
+                        <div class="card-title-2">Front-End Developer</div>
+                    </div>
+                    <div class="card-date">jan 2018 - may 2019</div>
+                </div>
+                <div class="desc">Created Professional WordPress Themes & Templates for Personal and Creative Websites.
+                </div>
+                <div class="btn">RECOMMENDATION <b>></b></div>
+            </div>
+            <div class="history-card">
+                <div class="card-head">
+                    <div class="title-1">
+                        <div class="card-title">Envato</div>
+                        <div class="card-title-2">Senior Developer
+</div>
+                    </div>
+                    <div class="card-date">jan 2017 - may 2018</div>
+                </div>
+                <div class="desc">Created Professional WordPress Themes & Templates for Personal and Creative Websites.
+                </div>
+                <div class="btn">RECOMMENDATION <b>></b></div>
+            </div>
+            <div class="history-card" id="history">
+                <div class="card-head">
+                    <div class="title-1">
+                        <div class="card-title">Envato</div>
+                        <div class="card-title-2">UI Developer</div>
+                    </div>
+                    <div class="card-date">jan 2015 - may 2016</div>
+                </div>
+                <div class="desc">Created Professional WordPress Themes & Templates for Personal and Creative Websites.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <a href="index.html">orqaga</a>
+    </div>
+</body>
+</html>
